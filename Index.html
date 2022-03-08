@@ -39,30 +39,49 @@
            <input type="text" id="employeeId" placeholder="Your Employee ID" required>
            <small class="error"></small>
 
-           <label for="Time">Time Request:</label>
-           <input type="time" id="appt" name="appt" min="8:00" max="17:00" required>
-           <small class="error"></small>
 
-           <label for="date">Date:</label>
+           <label for="date">Date of Absent:</label>
             <input type="date" id="datepicker" class="form-control" required>
             <small class="error"></small>
 
-           
-
-           <label for="reasons">Reasons for request:</label>
-           <textarea id="reasons" placeholder="input here" rows="6" required></textarea>
-           <small class="error"></small>
-
-
+            
+            <div class="form-check" >
+                <label for="date">Reason for Request:</label>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                <label class="form-check-label" for="flexCheckDefault">
+                    Less than three(3) hours notification of absent to Supervisor before scheduled shift
+                </label>
+              </div>
+              <div class="form-check" ">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                <label class="form-check-label" for="flexCheckChecked" >
+                    Unauthorized or Unapproved absent with Supervisor's approval
+                </label>
+              </div>
+              <div class="form-check" >
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                <label class="form-check-label" for="flexCheckChecked" >
+                    Two(2) consecutive days of absent with Supervisor's approval
+                </label>
+              </div>
+              <div class="form-check" >
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                <label class="form-check-label" for="flexCheckChecked" >
+                    Three(3) consecutive days of absent with Supervisor's approval
+                </label>
+              </div>
+              <div class="form-check" >
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                <label class="form-check-label" for="flexCheckChecked" >
+                    Other's please Specify
+                    <input type="text" class="form-control">
+                </label>
+              </div>
            
 
            <div class="center"></div>
            <input type="submit" value="Submit">
            <p id="success"></p>
-
-          
-
-
        </form>
    </div>
 
